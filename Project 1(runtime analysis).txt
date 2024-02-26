@@ -110,24 +110,28 @@ Runtime complexity(AT WORST): O(n)
 
 PART FIVE:
 Vector Sorting:
-Advantages:
-Simple Implementation: Using a vector for sorting is straightforward and easy to implement.
-Efficient for Small Datasets: For small datasets or when the list of courses is not expected to change frequently, a vector can offer good performance.
+ Advantages:
+ Simple Implementation: Using a vector for sorting is straightforward and easy to implement.
+ Efficient for Small Datasets: For small datasets or when the list of courses is not expected to change frequently, a vector can offer good performance.
 
-Disadvantages:
-Inefficient for Frequent Updates: When the list is frequently updated (courses added or removed), inserting or deleting elements in the middle of a vector can be inefficient.
-Linear Search: Searching for a specific course involves a linear search, resulting in O(n) time complexity.
+ Disadvantages:
+ Inefficient for Frequent Updates: When the list is frequently updated (courses added or removed), inserting or deleting elements in the middle of a vector can be inefficient.
+ Linear Search: Searching for a specific course involves a linear search, resulting in O(n) time complexity.
+
 Hash Table:
-Advantages:
-Constant Time Lookup: Hash tables offer constant-time lookup on average, providing fast access to course information.
-Efficient for Dynamic Datasets: Handling dynamic datasets, where courses are frequently added or removed, is efficient with hash tables.
-Disadvantages:
-Memory Overhead: Hash tables may have a memory overhead due to potential collisions and the need for a sufficiently large table.
-No Natural Ordering: Courses are not stored in a natural order, making it challenging to retrieve a sorted list without additional data structures or operations.
+ Advantages:
+ Constant Time Lookup: Hash tables offer constant-time lookup on average, providing fast access to course information.
+ Efficient for Dynamic Datasets: Handling dynamic datasets, where courses are frequently added or removed, is efficient with hash tables.
+
+ Disadvantages:
+ Memory Overhead: Hash tables may have a memory overhead due to potential collisions and the need for a sufficiently large table.
+ No Natural Ordering: Courses are not stored in a natural order, making it challenging to retrieve a sorted list without additional data structures or operations.
+
 Binary Tree:
-Advantages:
-Logarithmic Search Time (Balanced): In a balanced binary tree, search operations have a logarithmic time complexity (O(log n)), making them efficient.
-Natural Ordering: Binary trees naturally maintain ordering, making it easier to retrieve a sorted list of courses.
-Disadvantages:
-Requires Balancing: If not balanced, a binary tree can degrade into a linked list, resulting in O(n) time complexity for search operations.
-Complex Implementation: Implementing and maintaining a balanced binary tree can be more complex than other data structures. 
+ Advantages:
+ Logarithmic Search Time (Balanced): In a balanced binary tree, search operations have a logarithmic time complexity (O(log n)), making them efficient.
+ Natural Ordering: Binary trees naturally maintain ordering, making it easier to retrieve a sorted list of courses.
+
+ Disadvantages:
+ Requires Balancing: If not balanced, a binary tree can degrade into a linked list, resulting in O(n) time complexity for search operations.
+ Complex Implementation: Implementing and maintaining a balanced binary tree can be more complex than other data structures. 
